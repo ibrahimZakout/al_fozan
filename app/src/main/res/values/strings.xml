@@ -2,5 +2,7 @@
     <string name="app_name">Al_Fozan</string>
 
     <string name="textview_splash">Al_Fozan</string>
+    <string name="language_button">تسجيل الدخول</string>
+    <string name="textview_login">تسجيل الدخول</string>
 
 </resources>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string name="app_name">Al_Fozan</string>
     <string name="textview_splash">المندوب</string>
     <string name="language_button">تسجيل الدخول</string>
+    <string name="textview_login">أهلا بك من جديد</string>
+
 
 
 
