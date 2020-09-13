@@ -7,13 +7,16 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:src="@drawable/india" />
+
     <TextView
         android:id="@+id/text_view_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/image_view_flag"
         android:layout_alignParentTop="true"
-        android:layout_margin="16dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="14dp"
         android:layout_toEndOf="@+id/image_view_flag"
         android:gravity="center"
         android:text="India"
