@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F9">
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_gravity="start"
+        app:srcCompat="@drawable/ic_forgetpassword_rightarrow"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="317dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/error_connection_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textSize="24dp"
+        android:text="@string/error_connection_textview"
+        android:textColor="#303B44"
+        />
+
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textSize="16dp"
+        android:text="@string/error_connection_textview1"
+        android:textColor="#303B44"
+        android:alpha=".6"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/language_button"
+        android:drawableRight="@drawable/ic_connection_error_reload_image"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:text="@string/connection_error_button"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</LinearLayout>

@@ -91,7 +91,7 @@
         android:layout_marginRight="15dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
-        android:background="#37348D"
+        android:background="@drawable/language_button"
         android:textColor="@color/white"
         android:text="@string/language_button"
         android:textSize="16dp"

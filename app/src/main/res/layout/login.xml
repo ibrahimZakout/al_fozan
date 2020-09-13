@@ -23,26 +23,58 @@
         android:textStyle="bold"
         android:text="@string/textview_login"
         android:textColor="#D82B31"
+        android:layout_marginBottom="30dp"
         />
 
     <EditText
-        android:layout_gravity="center_horizontal"
         android:id="@+id/editText"
-        android:layout_margin="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-         />
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/login_edittext"
+        android:drawableStart="@drawable/ic_login_drawable_start_message"
+        android:drawablePadding="16dp"
+        android:hint="البريد الالكتروني"
+        android:paddingStart="12dp" />
 
     <EditText
-        android:layout_gravity="center_horizontal"
         android:id="@+id/editText2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="15dp"
-        android:inputType="textPersonName"
-         />
+        android:background="@drawable/login_edittext"
+        android:drawableStart="@drawable/ic_logim_drawable_start_lock"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:hint="كلمة المرور"
+        android:paddingStart="12dp" />
 
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/language_button"
+        android:textColor="@color/white"
+        android:text="@string/language_button"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نسيت كلمة المرور؟"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
 
 </LinearLayout>
