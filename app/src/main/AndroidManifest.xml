@@ -11,6 +11,11 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".Language">
+
+        </activity>
+
+
+        <activity android:name=".Order">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

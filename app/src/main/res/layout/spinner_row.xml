@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <ImageView
         android:id="@+id/image_view_flag"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:src="@drawable/india" />
+        android:src="@drawable/india"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_view_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/image_view_flag"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginBottom="14dp"
-        android:layout_toEndOf="@+id/image_view_flag"
         android:gravity="center"
         android:text="India"
         android:textColor="@android:color/black"
-        android:textSize="30sp" />
-</RelativeLayout>
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_flag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toEndOf="@+id/image_view_flag"
+        app:layout_constraintTop_toTopOf="@+id/image_view_flag"
+        app:layout_constraintVertical_bias="0.474" />
+</androidx.constraintlayout.widget.ConstraintLayout>

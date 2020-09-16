@@ -26,16 +26,16 @@
         android:id="@+id/imageView11"
         android:layout_width="33dp"
         android:layout_height="33dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="17dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/notification_refresh_arrow_shape"
+        android:padding="7dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_notifcation_refresh_arrow"
-        android:background="@drawable/notification_refresh_arrow_shape"
-        android:padding="7dp"/>
+        app:srcCompat="@drawable/ic_notifcation_refresh_arrow" />
 
     <ImageView
         android:id="@+id/imageView12"
