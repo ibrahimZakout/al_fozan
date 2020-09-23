@@ -11,9 +11,9 @@ public class Order extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.order);
+        setContentView(R.layout.activity_8);
 
-        en = findViewById(R.id.text_english);
+  /*      en = findViewById(R.id.text_english);
         enV = findViewById(R.id.text_english_v);
         ar = findViewById(R.id.text_arabic);
         arV = findViewById(R.id.text_arabic_v);
@@ -36,7 +36,7 @@ public class Order extends AppCompatActivity {
                 ar.setVisibility(View.GONE);
             }
         });
-
+*/
 
 
 

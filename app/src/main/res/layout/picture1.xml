@@ -7,13 +7,21 @@
     >
 
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="321dp"
+            android:layout_height="395dp"
+            android:src="@drawable/picture1"
+            android:layout_gravity="center"
+            />
+
+    </androidx.cardview.widget.CardView>
 
 
-
-    <ImageView
-        android:layout_width="321dp"
-        android:layout_height="395dp"
-        android:src="@drawable/picture1"/>
 
 
 </LinearLayout>

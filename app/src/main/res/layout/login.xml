@@ -35,6 +35,7 @@
         android:drawableStart="@drawable/ic_login_drawable_start_message"
         android:drawablePadding="16dp"
         android:hint="البريد الالكتروني"
+        android:gravity="start|center_vertical"
         android:paddingStart="12dp" />
 
     <EditText
