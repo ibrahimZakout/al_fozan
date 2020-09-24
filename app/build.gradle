@@ -20,6 +20,8 @@ android {
 }
 
 dependencies {
+    implementation 'com.android.support:design:29.0.0' //for bottom sheet
+
     implementation 'com.google.android.material:material:1.2.0-alpha05'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
