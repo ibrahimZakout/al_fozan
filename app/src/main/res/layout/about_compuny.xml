@@ -12,23 +12,24 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="10dp"
+
         android:text="@string/about_compuny_textview"
         android:textColor="#303B44"
         android:textSize="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="30dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_forgetpassword_rightarrow" />
+        app:srcCompat="@drawable/ic_forgetpassword_rightarrow_last" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,28 +39,28 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:layout_width="253dp"
-            android:layout_height="93dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="85dp"
             app:srcCompat="@drawable/language_logo" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dp"
             android:background="@drawable/splash_textview"
-            android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="@string/textview_splash"
             android:textColor="#FFFFFF"
             android:textSize="22sp"
-
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
             android:textStyle="bold" />
 
-        <androidx.core.widget.NestedScrollView
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="15dp"
@@ -71,8 +72,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="14dp"
-                android:text="aa"/>
-        </androidx.core.widget.NestedScrollView>
+                android:text="بدات شركة محمد بن راشد الفوزان سجل تجاري رقم (011011111)"/>
+        </ScrollView>
 
 
     </LinearLayout>

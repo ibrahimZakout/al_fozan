@@ -7,18 +7,31 @@
     android:orientation="vertical"
     android:background="#F3F4F9">
 
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#01BA52"
+        android:drawableRight="@drawable/ic_detail_order_image"
+        android:text="@string/detail_order_button"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
 
 
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="30dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="28dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_forgetpassword_rightarrow" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="28dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_forgetpassword_rightarrow_last" />
 
         <TextView
             android:id="@+id/textView3"
@@ -37,19 +50,121 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/detail_order_map"
-        android:scaleType="centerCrop"
 
         />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="90dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/detail_order_textview1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="#2141"
+                android:textSize="16sp"
+                android:textColor="#01BA52"
+                app:layout_constraintBottom_toBottomOf="@+id/textView33"
+                app:layout_constraintStart_toEndOf="@+id/textView33"
+                app:layout_constraintTop_toTopOf="@+id/textView33" />
+
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="100dp"
+                android:layout_height="22dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/detail_order_road"
+                android:gravity="center"
+                android:text="@string/detail_order_textview2"
+                android:textColor="#0D1724"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/detail_order_textview3"
+                android:textColor="#0D1724"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView34"
+
+                app:layout_constraintHorizontal_bias="0.267"
+                app:layout_constraintStart_toEndOf="@+id/circleImageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+            <TextView
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="0592415536"
+                app:layout_constraintEnd_toEndOf="@+id/textView36"
+                app:layout_constraintStart_toEndOf="@id/circleImageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView36"
+                android:textColor="#959382"
+                android:textSize="13dp"/>
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="43dp"
+                android:layout_height="18dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/detail_order_call_background"
+                android:text="@string/detail_order_textview4"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView37"
+                app:layout_constraintStart_toEndOf="@+id/textView37"
+                app:layout_constraintTop_toTopOf="@+id/textView37" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.cardview.widget.CardView>
 
@@ -57,10 +172,10 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView4"
         android:layout_width="match_parent"
-        android:layout_height="320dp"
+        android:layout_height="322dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
         app:cardCornerRadius="7dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,8 +198,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:paddingRight="15dp"
-                    android:text="معلومات الدفع"
+                    android:paddingStart="15dp"
+                    android:text="@string/detail_order_textview0"
                     android:textColor="@color/white"
                     android:textSize="14dp" />
 
@@ -93,11 +208,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="15dp"
-                    android:text=")ر.س(القيمة بال "
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="15dp"
+                    android:text="@string/detail_order_textview00"
                     android:textColor="@color/white"
                     android:textSize="14dp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -110,8 +226,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:paddingRight="15dp"
-                    android:text="طريقة الدفع"
+                    android:paddingStart="15dp"
+                    android:text="@string/detail_order_textview5"
                     android:textColor="#24232B"
                     android:textSize="13dp" />
 
@@ -120,15 +236,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="15dp"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="15dp"
                     android:text="60"
                     android:textColor="#24232B"
                     android:textSize="13dp"
 
                     />
             </LinearLayout>
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -144,8 +259,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:paddingRight="15dp"
-                    android:text="وقت الطلب"
+                    android:paddingStart="15dp"
+                    android:text="@string/detail_order_textview6"
                     android:textColor="#24232B"
                     android:textSize="13dp" />
 
@@ -154,13 +269,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="15dp"
-                    android:text="pm 02:05"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="15dp"
+                    android:text="02:05"
                     android:textColor="#24232B"
                     android:textSize="13dp" />
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ECECEC" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -172,8 +291,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:paddingRight="15dp"
-                    android:text=")ر.س(تكلفة البضاعة "
+                    android:paddingStart="15dp"
+                    android:text="@string/detail_order_textview7"
                     android:textColor="#24232B"
                     android:textSize="13dp" />
 
@@ -182,8 +301,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="15dp"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="15dp"
                     android:text="50"
                     android:textColor="#24232B"
                     android:textSize="13dp"
@@ -191,6 +310,10 @@
                     />
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ECECEC" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -201,8 +324,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:paddingRight="15dp"
-                    android:text=")ر.س(تكلفة التوصيل "
+                    android:paddingStart="15dp"
+                    android:text="@string/detail_order_textview8"
                     android:textColor="#24232B"
                     android:textSize="13dp" />
 
@@ -211,15 +334,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="15dp"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="15dp"
                     android:text="200"
                     android:textColor="#24232B"
                     android:textSize="13dp"
 
                     />
             </LinearLayout>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ECECEC" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -230,8 +356,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:paddingRight="15dp"
-                    android:text=")ر.س( الضريبة "
+                    android:paddingStart="15dp"
+                    android:text="@string/detail_order_textview9"
                     android:textColor="#24232B"
                     android:textSize="13dp" />
 
@@ -240,15 +366,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="15dp"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="15dp"
                     android:text="50"
                     android:textColor="#24232B"
                     android:textSize="13dp"
 
                     />
             </LinearLayout>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ECECEC" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -259,8 +388,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:paddingRight="15dp"
-                    android:text=")ر.س(خصم الكوبون "
+                    android:paddingStart="15dp"
+                    android:text="@string/detail_order_textview10"
                     android:textColor="#24232B"
                     android:textSize="13dp" />
 
@@ -269,13 +398,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="15dp"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="15dp"
                     android:text="50"
                     android:textColor="#24232B"
                     android:textSize="13dp" />
             </LinearLayout>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ECECEC" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -286,8 +418,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:paddingRight="15dp"
-                    android:text="المبلغ الاجمالي"
+                    android:paddingStart="15dp"
+                    android:text="@string/detail_order_textview11"
                     android:textColor="#01BA52"
                     android:textSize="16dp"
                     android:textStyle="bold" />
@@ -305,32 +437,14 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#ECECEC" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#ECECEC" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#ECECEC" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#ECECEC" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#ECECEC" />
 
 
         </LinearLayout>
@@ -343,7 +457,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:text="معلومات الموقع"
+        android:text="@string/detail_order_textview12"
         android:textStyle="bold"
         android:textSize="14dp"
         android:textColor="#000000"
@@ -354,24 +468,26 @@
         android:id="@+id/cardView6"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="7dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17"
+        android:padding="5dp"
         app:cardCornerRadius="7dp">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingRight="9dp">
+    android:paddingRight="7dp"
+    android:paddingVertical="3dp">
         <TextView
             android:id="@+id/textView19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="13dp"
             android:textColor="#242E42"
-            android:text="المحافظة، المنطقة، رقم القطعة، رقم الشارع، الحي، رقم البناية، رقم الطابق، رقم الشقة" />
+            android:text="@string/detail_order_textview13" />
 
         <TextView
             android:id="@+id/textView49"
@@ -391,7 +507,7 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="تغير حالة الطلب"
+        android:text="@string/detail_order_textview14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView6"
         android:layout_gravity="center_horizontal"

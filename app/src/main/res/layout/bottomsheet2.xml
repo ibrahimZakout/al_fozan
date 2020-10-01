@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -17,10 +17,10 @@
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
             android:layout_marginTop="15dp"
-            android:text="تاكيد وحفظ"
+            android:text="@string/bottomsheet_button"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
             app:layout_constraintStart_toStartOf="@+id/linearLayout2"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
@@ -71,21 +71,21 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="مسترجع" />
+                    android:text="@string/bottomsheet_radiogroup0" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="في الطريق " />
+                    android:text="@string/bottomsheet_radiogroup1" />
 
                 <RadioButton
                     android:id="@+id/radioButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="مكتمل" />
+                    android:text="@string/bottomsheet_radiogroup2"/>
             </RadioGroup>
         </LinearLayout>
 
@@ -94,8 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="انتبه لايمكنك التراجع في حالة الطلب السابقة  "
-
+            android:text="@string/bottomsheet_textview2"
             android:textColor="#D91F20"
             android:textSize="8dp"
             app:layout_constraintStart_toStartOf="@+id/textView31"
@@ -107,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="160dp"
-            android:text="حالة الطلب"
+            android:text="@string/bottomsheet_textview"
             android:textColor="#353535"
             android:textSize="16dp"
             android:textStyle="bold"
@@ -123,7 +122,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
-            android:text=" اختر حالة الطلب الحالية :"
+            android:text="@string/bottomsheet_textview1"
             android:textColor="#000000"
             android:textSize="12dp"
             app:layout_constraintStart_toStartOf="parent"

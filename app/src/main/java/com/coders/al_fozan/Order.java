@@ -6,12 +6,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Order extends AppCompatActivity {
+/*public class Order extends AppCompatActivity {
     TextView en, enV, ar, arV;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_8);
+        setContentView(R.layout.activity_8);*/
 
   /*      en = findViewById(R.id.text_english);
         enV = findViewById(R.id.text_english_v);
@@ -40,4 +40,4 @@ public class Order extends AppCompatActivity {
 
 
 
-    }}
+ /*   }}*/

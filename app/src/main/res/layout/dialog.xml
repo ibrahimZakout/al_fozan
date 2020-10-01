@@ -8,8 +8,8 @@
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="320dp"
-        android:layout_height="262dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
         android:layout_gravity="center_horizontal"
         >
@@ -46,7 +46,7 @@
                 android:id="@+id/textView21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="تهانينا"
+                android:text="@string/dialog_textview"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView15" />
@@ -58,22 +58,24 @@
                 android:id="@+id/textView23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="تم تسليم طلبك ال العميل بنجاح"
+                android:text="@string/dialog_textview1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
             <Button
-                android:layout_marginTop="17dp"
                 android:id="@+id/button_dialog"
-                android:layout_width="294dp"
-                android:layout_height="48dp"
-                android:text="تم"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/dialog_button_shape"
+                android:text="@string/dialog_button"
                 android:textColor="#FFFFFF"
                 android:textSize="16dp"
-                android:background="@drawable/dialog_button_shape"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView23"
+                app:layout_constraintStart_toStartOf="@+id/textView23"
                 app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
 

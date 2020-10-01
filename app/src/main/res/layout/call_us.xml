@@ -10,29 +10,30 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="69dp">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
 
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="30dp"
             android:layout_height="25dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_forgetpassword_rightarrow" />
+            app:srcCompat="@drawable/ic_forgetpassword_rightarrow_last" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="108dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="10dp"
             android:text="@string/about_compuny_textview"
             android:textColor="#303B44"
             android:textSize="16dp"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -52,11 +53,9 @@
                 android:id="@+id/imageView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="60dp"
+                android:layout_marginHorizontal="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.617"
-                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.588"
                 app:srcCompat="@drawable/ic_call_us_image_bell" />
@@ -66,10 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageView6"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView9"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.588"
@@ -112,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="28dp"
-                android:text="اترك رسالة وسوف نتواصل معك بأسرع وقت"
+                android:text="@string/about_compuny_textview2"
                 android:textColor="#0D1724"
                 android:textSize="14dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -125,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="40dp"
-                android:text="مرحبا بك"
+                android:text="@string/about_compuny_textview0"
                 android:textColor="#0D1724"
                 android:textSize="34dp"
                 app:layout_constraintStart_toEndOf="@+id/imageView10"
@@ -136,43 +132,54 @@
     <EditText
         android:id="@+id/editText10"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-
+        android:paddingVertical="10dp"
         android:background="@drawable/login_edittext"
-        android:hint="الاسم كاملا"
-        android:paddingStart="12dp"
+        android:hint="@string/about_compuny_edittext"
+        android:paddingStart="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"/>
 
     <EditText
         android:id="@+id/editText11"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
         android:layout_margin="10dp"
         android:background="@drawable/login_edittext"
-        android:hint="البريد الالكتروني"
-        android:paddingStart="12dp" />
+        android:hint="@string/about_compuny_edittext1"
+        android:paddingStart="10dp" />
     <EditText
         android:id="@+id/editText12"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
         android:layout_marginTop="1dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/login_edittext"
-        android:hint="رقم الجوال"
-        android:paddingStart="12dp" />
+        android:hint="@string/about_compuny_edittext2"
+        android:paddingStart="10dp"
+        />
 
     <EditText
         android:id="@+id/editText13"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/login_edittext"
-        android:hint="رسالتك هنا"
-        android:paddingStart="12dp"
+        android:hint="@string/about_compuny_edittext3"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
         android:paddingBottom="65dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        />
 
 
     <Button
@@ -180,8 +187,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/language_button"
-        android:text="ارسال"
-        android:layout_marginTop="55dp"
+        android:text="@string/about_compuny_button"
+        android:layout_marginBottom="15dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:textColor="@color/white"

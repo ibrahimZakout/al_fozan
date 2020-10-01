@@ -2,27 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/home"
+        android:id="@+id/navigation_home"
         android:enabled="true"
         android:icon="@drawable/home"
         android:title="@string/home"
         app:showAsAction="always|withText" />
     <item
-        android:id="@+id/statistics"
+        android:id="@+id/navigation_statics"
         android:enabled="true"
         android:icon="@drawable/statistics"
         android:title="@string/statistics"
-        app:showAsAction="always|withText"/>
+        app:showAsAction="always|withText" />
     <item
-        android:id="@+id/notifications"
+        android:id="@+id/navigation_notifications"
         android:enabled="true"
         android:icon="@drawable/notifications"
         android:title="@string/notifications"
-        app:showAsAction="always|withText"/>
+        app:showAsAction="always|withText" />
     <item
         android:id="@+id/my_account"
         android:enabled="true"
         android:icon="@drawable/my_account"
         android:title="@string/my_account"
-        app:showAsAction="always|withText"/>
+        app:showAsAction="always|withText" />
+
 </menu>
