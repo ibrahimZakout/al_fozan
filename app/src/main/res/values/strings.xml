@@ -88,7 +88,7 @@
     <string name="item_order_textview6">pending</string>
     <string name="item_order_button">Change the status</string>
     <string name="dialog_textview">Congratulations</string>
-    <string name="dialog_textview1">Your order has been successfully delivered to the client</string>
+    <string name="dialog_textview1">Your order has been successfully\n delivered to the client</string>
     <string name="dialog_button">Done</string>
     <string name="activity8_textview">All orders</string>
     <string name="detail_order_textview0">payment information</string>

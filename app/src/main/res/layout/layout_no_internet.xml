@@ -15,6 +15,9 @@
         android:layout_marginStart="15dp"
         />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_marginHorizontal="50dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+
             android:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/error_connection_image" />
 
@@ -36,7 +39,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
             android:textSize="24dp"
             android:text="@string/error_connection_textview"
             android:textColor="#303B44"
@@ -66,9 +68,10 @@
             android:paddingEnd="35dp"
             android:text="@string/connection_error_button"
             android:textColor="@color/white"
-            android:textSize="16dp" />
+            android:textSize="16dp"/>
 
     </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

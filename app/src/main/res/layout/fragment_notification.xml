@@ -37,7 +37,7 @@
         app:srcCompat="@drawable/ic_notifcation_refresh_arrow" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:visibility="visible"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,11 +51,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7">
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.354">
 
         <ImageView
             android:id="@+id/imageView12"
@@ -85,9 +87,6 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
