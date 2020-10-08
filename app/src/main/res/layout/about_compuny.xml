@@ -8,28 +8,7 @@
    >
 
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-
-        android:text="@string/about_compuny_textview"
-        android:textColor="#303B44"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_forgetpassword_rightarrow_last" />
+    <include layout="@layout/toolbar"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -68,11 +47,12 @@
 
 
             <TextView
+                android:padding="5dp"
                 android:id="@+id/textView25"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="14dp"
-                android:text="بدات شركة محمد بن راشد الفوزان سجل تجاري رقم (011011111)"/>
+                android:text="@string/about_compuny_textview1"/>
         </ScrollView>
 
 

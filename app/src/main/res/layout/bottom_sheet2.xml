@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/bottomsheet_constrainlayout">
+    android:background="@drawable/bottomsheet_constrainlayout"
+    >
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,19 +17,27 @@
         android:background="@drawable/bottomsheet_constrainlayout">
 
         <Button
+            android:id="@+id/save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/bottomsheet_button"
+            android:background="@drawable/language_button"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/linearLayout2"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="15dp"
+            android:id="@+id/close_bottom_sheet"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="18dp"
             android:src="@drawable/ic_bottomsheet_cross"
             app:layout_constraintBottom_toBottomOf="@+id/textView29"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +94,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/bottomsheet_radiogroup2"/>
+                    android:text="@string/bottomsheet_radiogroup2" />
             </RadioGroup>
         </LinearLayout>
 
@@ -95,6 +104,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="@string/bottomsheet_textview2"
+
             android:textColor="#D91F20"
             android:textSize="8dp"
             app:layout_constraintStart_toStartOf="@+id/textView31"
@@ -105,13 +115,13 @@
             android:id="@+id/textView29"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="160dp"
             android:text="@string/bottomsheet_textview"
             android:textColor="#353535"
             android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageView17"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageView17"
             app:layout_constraintVertical_bias="0.272"
             app:layout_goneMarginTop="15dp" />
@@ -130,6 +140,5 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

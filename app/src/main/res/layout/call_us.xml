@@ -11,15 +11,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp">
+       >
 
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="30dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingHorizontal="13dp"
+            android:paddingBottom="13dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_forgetpassword_rightarrow_last" />
@@ -152,18 +152,50 @@
         android:background="@drawable/login_edittext"
         android:hint="@string/about_compuny_edittext1"
         android:paddingStart="10dp" />
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingVertical="10dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:background="@drawable/login_edittext"
-        android:hint="@string/about_compuny_edittext2"
-        android:paddingStart="10dp"
-        />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="10dp"
+      android:background="@drawable/login_edittext"
+      >
+
+      <EditText
+          android:id="@+id/editText12"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/login_edittext"
+          android:hint="@string/about_compuny_edittext2"
+          android:paddingHorizontal="10dp"
+          android:paddingVertical="10dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/textView40"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textView40"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="10dp"
+          android:text="+965"
+          android:textColor="#0D1724"
+          android:textSize="15sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/imageView25"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+          android:id="@+id/imageView25"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="10dp"
+          android:src="@drawable/a"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <EditText
         android:id="@+id/editText13"
@@ -185,6 +217,7 @@
 
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

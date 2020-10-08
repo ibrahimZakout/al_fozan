@@ -2,10 +2,12 @@ package com.coders.al_fozan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,7 +19,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private ArrayList<CountryItem> mCountryList;
     private CountryAdapter mAdapter;
-    Button button4,save;
+    Button button4, save;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,36 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-      button4 = findViewById(R.id.button4);//this for bottom sheet
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(MainActivity.this);
-                bottomSheetDialog.setContentView(R.layout.bottom_sheet);
-                bottomSheetDialog.setCanceledOnTouchOutside(false);
-
-              save =  bottomSheetDialog.findViewById(R.id.save);
-              save.setOnClickListener(new View.OnClickListener() {
-                  @Override
-                  public void onClick(View view) {
-                    Toast.makeText(getBaseContext(),"hi",Toast.LENGTH_LONG).show();
-                  }
-              });
-
-
-                bottomSheetDialog.show();
-            }
-        });
-
-
-
-
-
-        initList();
+       initList();
         Spinner spinnerCountries = findViewById(R.id.spinner_countries);
         mAdapter = new CountryAdapter(this, mCountryList);
         spinnerCountries.setAdapter(mAdapter);
@@ -75,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     private void initList() {
         mCountryList = new ArrayList<>();
         mCountryList.add(new CountryItem("India", R.drawable.india));

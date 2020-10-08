@@ -94,6 +94,12 @@
     <string name="detail_order_textview0">معلومات الدفع</string>
     <string name="detail_order_textview00">)ر.س( القيمة بال</string>
     <string name="mainfragment_button">حدث الصفحة</string>
+    <string name="detail_order_textview15"> قبول الطلب</string>
+    <string name="notification_distance">5 كم </string>
+    <string name="detailorder_text">بطاقة مدى</string>
+    <string name="refuse">رفض</string>
+
+
 
 
 

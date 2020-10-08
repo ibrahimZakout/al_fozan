@@ -7,12 +7,13 @@
     android:background="#F3F4F9">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
         android:layout_gravity="start"
         app:srcCompat="@drawable/ic_forgetpassword_rightarrow_last"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingHorizontal="13dp"
+        android:paddingBottom="13dp"
         />
 
     <ScrollView
@@ -23,17 +24,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        >
 
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_marginHorizontal="50dp"
-            android:layout_height="wrap_content"
+            android:layout_height="390dp"
 
             android:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/error_connection_image" />
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -57,10 +59,16 @@
             android:gravity="center"
             />
 
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
         <Button
+            android:id="@+id/refresh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center_horizontal|bottom"
             android:layout_marginTop="10dp"
             android:background="@drawable/language_button"
             android:drawableRight="@drawable/ic_connection_error_reload_image"

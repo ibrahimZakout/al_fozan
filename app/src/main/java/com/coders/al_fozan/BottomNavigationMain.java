@@ -4,10 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Context;
+import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.coders.al_fozan.ui.MyAccountFragment;
+import com.coders.al_fozan.ui.account.MyAccountFragment;
 import com.coders.al_fozan.ui.dashboard.MainFragment;
 import com.coders.al_fozan.ui.home.StaticsFragment;
 import com.coders.al_fozan.ui.notifications.NotificationsFragment;
@@ -20,6 +24,7 @@ public class BottomNavigationMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_navigation_main);
 
+        checkNetworkConnectionStatus();
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
@@ -54,4 +59,23 @@ public class BottomNavigationMain extends AppCompatActivity {
                     return true;
                 }
             };
+
+    private void checkNetworkConnectionStatus() {
+        boolean wifiConnected;
+        boolean mobileConnected;
+        ConnectivityManager connMgr = (ConnectivityManager)
+                getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeInfo = connMgr.getActiveNetworkInfo();
+        if (activeInfo != null && activeInfo.isConnected()){ //connected with either mobile or wifi
+            wifiConnected = activeInfo.getType() == ConnectivityManager.TYPE_WIFI;
+            mobileConnected = activeInfo.getType() == ConnectivityManager.TYPE_MOBILE;
+            if (wifiConnected){ //wifi connected
+
+            }
+
+        }else { //no internet connection
+            Intent s = new Intent(this,NoInternetConnection.class);
+            startActivity(s);
+        }
+    }
 }

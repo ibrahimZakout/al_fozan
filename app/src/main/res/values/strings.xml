@@ -3,15 +3,14 @@
 
     <string name="textview_splash">Delegate</string>
     <string name="textview_login">welcome back</string>
-    <string name="language_button">sign in</string>
+    <string name="language_button">Sign in</string>
     <string name="forgetpassword_textview">Forgot your password ?</string>
     <string name="forgetpassword_textview1">Add your email to receive a message\nwith the new password</string>
-    <string name="forgetpassword_button">Re-transmitter</string>
+    <string name="forgetpassword_button">Re-send</string>
     <string name="error_connection_textview">Unable to connect to the Internet</string>
     <string name="error_connection_textview1">Unable to connect to internet. Please check there is internet service then refresh the page</string>
     <string name="connection_error_button">refresh</string>
-    <string name="about_compuny_textview">About the application</string>
-    <string name="about_compuny_textview1">بدأت شركة محمد راشد الفوزان وشركاه , سجل تجاري رقم ( 1010203756 ) قبل أكثر من 50 سنة في الستينات الميلادية , بمعرض نجد بالبطحاء وسط الرياض , بنشاط الملابس الرجالية بأنواعها الجاهزة , بملكية الأخوين حمدان راشد الفوزان رحمة الله عليه , ومحمد راشد الفوزان , كان هذا بوسط البطحاء , بالقرب من سوق الكويتية  واستمر لسنوات بعدها تحولت إلى الجملة بالبطحاء أيضا بسوق الجملة , وهذا كان الثمانينات الميلادية , بفرع بالرياض وفرع بجدة والشرقية ثم توسعت الجملة إلى فروع بالقصيم ببريدة والأحساء والمدينة المنورة وخميس مشيط والطائف استمرت حتى بداية عام الألفين بفتح فروع التجزئة , وتطورت الأعمال بماركات جديدة وعديدة يمكن متابعتها من خلال الموقع والمتجر بعلامات تقارب 20 علامة تملكها الشركة , وتعتبر من رواد الملابس الداخلية الرجالية والشباب والأطفال والنسائي والبناتي , و إحرام الحج والأثواب بأنواعها والمناشف وغيرها وعلامات من مختلف الدول من انجلترا واسبانيا ومصر وتايوان وفيتنام والصين وغيرها و اشهر هذه العلامات بالسوق والرائدة ” برومان ” للملابس الداخلية , وشبرد و لامبتكس” أبو عسكري وأبو خروف ” بجامات إنجليزية , وكنانة من مصر ملابس داخلية , وفالنسيا للأثواب , والعديد من العلامات التجارية للأشمغة  والأن الشركة تحولت من معرض نجد الصغير إلى شركة مساهمة مقفلة برأس مال 50 مليون ريال , ومساهمين بالشركة , وشبكة فروع تجزئة هي من الأوائل  بالسوق التي تملك فروع جملة وتجزئة وموزعين ومتجر إلكتروني\nولديها الرغبة والطموح بتطوير أعمالها والتوسع .</string>
+    <string name="about_compuny_textview">About app</string>
     <string name="detail_order_textview">Order details</string>
     <string name="text_no_req">Welcome</string>
     <string name="button_no_internet">welcome</string>
@@ -42,7 +41,7 @@
     <string name="about_compuny_edittext1">E-mail</string>
     <string name="about_compuny_edittext2">Mobile number</string>
     <string name="about_compuny_edittext3">Your message here</string>
-    <string name="about_compuny_button">send</string>
+    <string name="about_compuny_button">Send</string>
     <string name="detail_order_button">See the address on the map</string>
     <string name="detail_order_textview1">Order number :</string>
     <string name="detail_order_textview2">in the way</string>
@@ -94,5 +93,15 @@
     <string name="detail_order_textview0">payment information</string>
     <string name="detail_order_textview00">Value in (SAR)</string>
     <string name="mainfragment_button">Refresh the page</string>
+    <string name="detail_order_textview15">Accept order</string>
+    <string name="about_compuny_textview1">
+   " Mohammed Rashid Al-Fawzan and Partners Company, Commercial Registry No. (1010203756), began more than 50 years ago in the 1960s, at Najd Gallery in Al-Batha in central Riyadh, with the activity of men's clothing of all kinds, owned by the two brothers Hamdan Rashid Al-Fawzan, may God have mercy on him, and Muhammad Rashid Al-Fawzan, this was in the middle Al-Batha, near the Kuwaiti market and continued for years
+Then it turned to the sentence in Al-Batha also in the wholesale market, and this was the eighties of the Gregorian calendar, with a branch in Riyadh and a branch in Jeddah and Al-Sharqiya, then the sentence expanded to branches in Qassim in Buraidah, Al-Ahsa, Medina, Khamis Mushait and Taif
+It continued until the beginning of the 2000s with the opening of retail branches, and the business developed with many new brands that can be followed through the website and the store with signs of approximately 20 brands owned by the company, and it is considered one of the pioneers of underwear for men, youth and children, women and girls, and the pilgrimage for Hajj and all kinds of clothes, towels, etc. England, Spain, Egypt, Taiwan, Vietnam, China, etc. The most famous of these brands in the market, the pioneer “Proman” for underwear, Shepherd and Lampex “Abu Askari and Abu Kharouf” with English bags, Kanana from Egypt underwear, Valencia for dresses, and many brands of shemaghs
+Now the company has transformed from a small Najd showroom to a closed joint stock company with a capital of 50 million riyals, and the company's shareholders, and the network of retail branches is one of the first in the market that has wholesale and retail branches, distributors and an electronic store, and has the desire and ambition to develop its business and expand."
+    </string>
+    <string name="notification_distance">5 km</string>
+    <string name="detailorder_text">mada card</string>
+    <string name="refuse">refuse</string>
 
 </resources>

@@ -104,6 +104,7 @@
         android:layout_marginRight="15dp"
         android:background="@drawable/language_button"
         android:text="@string/language_button"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16dp"
         android:layout_marginBottom="15dp"

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.coders.al_fozan">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/x"
@@ -14,27 +16,26 @@
 
         <activity android:name=".CallUs" />
         <activity android:name=".DetailOrder">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+        <activity android:name=".DetailOreder1">
+
+        </activity>
+
+
 
         <activity android:name=".Language" />
         <activity android:name=".Login" />
         <activity android:name=".ForgetPassword" />
-        <activity android:name=".Activity_8" />
         <activity android:name=".AboutCompny" />
         <activity android:name=".NoInternetConnection">
 
         </activity>
         <activity android:name=".Splash">
-
-        </activity>
-        <activity android:name=".MyDialog" >
-
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity android:name=".MainActivity">

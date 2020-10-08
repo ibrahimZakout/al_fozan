@@ -10,18 +10,21 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingHorizontal="13dp"
+        android:paddingBottom="13dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_forgetpassword_rightarrow_last" />
 
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -82,7 +85,7 @@
         <Button
             android:layout_width="10dp"
             android:layout_height="10dp"
-            android:visibility="visible"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button2" />
@@ -147,6 +150,8 @@
 
 
                 <TextView
+                    android:paddingStart="10dp"
+                    android:drawableStart="@drawable/ic_circle"
                     android:id="@+id/textView35"
                     android:layout_width="100dp"
                     android:layout_height="22dp"
@@ -239,8 +244,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingVertical="3dp"
-                android:paddingRight="7dp">
+                android:paddingVertical="2dp"
+                android:paddingStart="5dp">
 
                 <TextView
                     android:id="@+id/textView19"
@@ -323,14 +328,24 @@
                         android:textColor="#24232B"
                         android:textSize="13dp" />
 
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mada"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="7dp"
+                        />
                     <TextView
                         android:id="@+id/textView15"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:gravity="end|center_vertical"
                         android:paddingEnd="15dp"
-                        android:text="60"
+                        android:text="@string/detailorder_text"
                         android:textColor="#24232B"
                         android:textSize="13dp"
 
